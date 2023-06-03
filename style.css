@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#navbar {
+    text-align: end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-right: 1em;
+    background-color: #e76f51;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navlink {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.navlink:hover {
+    background-color: #2a9d8f;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+}
+
+h1 {
+    font-size: 6.4rem;
+}
+
+#welcome-section h3 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+#projects {
+    text-align: center;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+    background-color: #2a9d8f;
+}
+
+#projects h2 {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: white;
+    height: 2px;
+    margin-top: 3px;
+}
+
+#selected-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-column, #selected-projects {
+    margin: 2em 1em 0 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption, #all-projects {
+    margin-bottom: 2em;
+    background-color: #264653;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+#all-projects {
+    display: inline-block;
+    margin: auto;
+}
+
+figcaption:hover, #all-projects:hover {
+    background-color: #e76f51;
+}
+
+#contact {
+    padding: 6em 1em;
+    border-bottom: 2px #e76f51 solid;
+}
+
+#contact h2 {
+    padding-bottom: 0.5em;
+    font-size: 4rem;
+}
+
+#contact, footer {
+    text-align: center;
+    background-color: #264653;
+}
+
+.profile-div {
+    display: inline-block;
+    margin: 1em;
+}
+
+.profile-div:hover {
+    transform: scale(1.1);
+}
+
+i {
+    margin: 5px;
+}
+
+footer {
+    padding: 1em;
+}
+
+@media (max-width: 650px) {
+    * {
+        font-size: 1rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    #welcome-section h3 {
+        font-size: 1.5rem;
+    }
+
+    #projects h2, #contact h2 {
+        font-size: 2rem;
+    }
+    #navbar {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #selected-projects {
+        display: block;
+    }
+}
